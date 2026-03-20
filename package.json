@@ -1,0 +1,25 @@
+{
+  "name": "atlas-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "analytics-js-sdk",
+    "my-analytics-test"
+  ],
+  "scripts": {
+    "build:sdk": "npm run build --workspace=analytics-js-sdk",
+    "dev:sdk": "npm run dev --workspace=analytics-js-sdk",
+    "dev:example": "npm run dev --workspace=my-analytics-test",
+    "build:all": "npm run build:sdk && npm run build --workspaces --if-present",
+    
+    "build:backend": "cd atlas && go build -o bin/atlas .",
+    "dev:backend": "cd atlas && go run main.go",
+    "test:backend": "cd atlas && go test ./...",
+    
+    "dev": "concurrently \"npm:dev:sdk\" \"npm:dev:backend\" \"npm:dev:example\"",
+    "build": "npm run build:backend && npm run build:all"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

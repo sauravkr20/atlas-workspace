@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+*.log
+.DS_Store
+
+# Go
+atlas/bin/
+atlas/*.exe
+atlas/*.test
+
+# IDE
+.vscode/
+.idea/

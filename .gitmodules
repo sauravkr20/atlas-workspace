@@ -1,0 +1,12 @@
+[submodule "atlas"]
+	path = atlas
+	url = https://github.com/sauravkr20/atlas.git
+    branch = main
+
+[submodule "analytics-js-sdk"]
+	path = analytics-js-sdk
+	url = https://github.com/sauravkr20/analytics-js-sdk.git
+    branch = main
+[submodule "my-analytics-test/atlas"]
+	path = my-analytics-test/atlas
+	url = https://github.com/sauravkr20/atlas.git
