@@ -10,3 +10,6 @@
 [submodule "my-analytics-test/atlas"]
 	path = my-analytics-test/atlas
 	url = https://github.com/sauravkr20/atlas.git
+[submodule "examples/next-js"]
+	path = examples/next-js
+	url = https://github.com/sauravkr20/example-next-js-analytics-sdk.git
